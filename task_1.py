@@ -11,6 +11,6 @@ def sum_odd_index(str):
     return sum_index
 
 
-str = [2, 3, 5, 9, 3]
+str = [2, 3, 5, 9, 3, 7]
 
 print(sum_odd_index(str))
