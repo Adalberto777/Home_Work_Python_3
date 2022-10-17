@@ -3,14 +3,14 @@
 # [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
 def sum_odd_index(str):
-    sum = 0
+    sum_index = 0
 
     for i in range(1, len(str), 2):
-        sum += str[i]
+        sum_index += str[i]
         
-    return sum
+    return sum_index
 
 
-str = [1, 2, 5, 7, 8, 9]
+str = [2, 3, 5, 9, 3]
 
 print(sum_odd_index(str))
