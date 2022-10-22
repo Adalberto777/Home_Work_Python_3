@@ -12,8 +12,11 @@ for i in range(2, n + 1):
     positiv_fibo.append(positiv_fibo[i - 1] +  positiv_fibo[i - 2])
     negative_fibo.append(negative_fibo[i - 2] - negative_fibo[i - 1])
 
-for i in range(1, n):
-    nego_fibo.append(negative_fibo[n - i])
+# for i in range(1, n):
+#     nego_fibo.append(negative_fibo[n - i])
+
+negative_fibo.reverse()
+negative_fibo.pop(0)
 
 
-print(nego_fibo + positiv_fibo)
+print(negative_fibo + positiv_fibo)
