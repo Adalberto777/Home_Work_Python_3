@@ -26,7 +26,8 @@ def nega_fibo(n):
 
         str_nega_fibo.pop(0)
         str_nega_fibo.reverse()        
-        str_nega_fibo = str_nega_fibo + str
+        # str_nega_fibo = str_nega_fibo + str
+        str_nega_fibo.extend(str)
     return str_nega_fibo
 
 
